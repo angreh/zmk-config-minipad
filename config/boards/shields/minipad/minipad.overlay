@@ -21,7 +21,7 @@
             ;
     };
 
-	default_transform: matrix-transform {
+	default_transform: keymap_transform {
 		compatible = "zmk,matrix-transform";
 		columns = <3>; // Length of the "col-gpios" array
         rows = <3>; // Length of the "row-gpios" array
