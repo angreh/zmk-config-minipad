@@ -3,15 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-  behaviors {
-    tap_dance_pairing: behavior_tap_dance {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp 1>, <&bt BT_SEL 0>;
-    };
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
@@ -21,9 +12,9 @@
       // |     4     |     5     |     6     |
       // |     7     |     8     |     9     |
       bindings = <
-        &tap_dance_pairing &kp 2 &kp 3
-        &kp 4 &kp 5 &kp 6
-        &kp 7 &kp 8 &kp 9
+        &kp KP_N1   &kp KP_N2   &kp KP_N3
+        &kp KP_N4   &kp KP_N5   &kp KP_N6
+        &kp KP_N7   &kp KP_N8   &kp KP_N9
       >;
     };
   };
